@@ -9,7 +9,7 @@ const loaderAnimation = lottie.loadAnimation({
   renderer: "svg",
   loop: true,
   autoplay: false,
-  path: "../assets/loader.json",
+  path: "../../assets/loader.json",
 });
 
 form.addEventListener("submit", (e) => {
@@ -18,7 +18,7 @@ form.addEventListener("submit", (e) => {
   const formData = new FormData(form);
 
   const xhr = new XMLHttpRequest();
-  xhr.open("POST", "http://127.0.0.1:3000/api/upload", true);
+  xhr.open("POST", "https://mytubeserver-production.up.railway.app/api/upload", true);
   xhr.timeout = 10 * 60 * 1000;
 
   containerLoader.style.display = "block";
