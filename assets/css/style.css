@@ -10,7 +10,8 @@ body {
   flex-direction: column;
   justify-content: center;
 
-  touch-action: none;
+  touch-action: pan-x pan-y;
+  -ms-touch-action: pan-x pan-y;
 
   gap: 20px;
 

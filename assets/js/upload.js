@@ -47,7 +47,7 @@ form.addEventListener("submit", (e) => {
       const result = JSON.parse(xhr.responseText);
       if (result.success) {
         alert("Видео загружено!");
-        window.location.href = "index.html";
+        window.location.href = "../../index.html";
       } else {
         alert("Ошибка загрузки");
       }
