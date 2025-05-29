@@ -3,7 +3,7 @@ const LoaderAnimation = lottie.loadAnimation({
   renderer: "svg",
   loop: true,
   autoplay: false,
-  path: "../../assets/loader.json",
+  path: "../../assets/js/loader.json",
 });
 
 async function GetVideos() {
