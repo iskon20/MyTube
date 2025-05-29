@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Видео</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="video-cont">
+      <h1>Все видео</h1>
+      <div class="newVideo">
+        <a href="upload.html" title="Загрузить новое видео">
+          <img
+            src="assets/img/icons/newVideo.png"
+            alt="Загрузить новое видео"
+          />
+        </a>
+      </div>
+    </div>
+    <div
+      id="loader-animation"
+      style="width: 100px; height: 100px; margin: 30px auto; display: none"
+    ></div>
+    <div class="videos" id="videos"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
