@@ -3,7 +3,7 @@ const LoaderAnimation = lottie.loadAnimation({
   renderer: "svg",
   loop: true,
   autoplay: false,
-  path: "../loader.json",
+  path: "../assets/loader.json",
 });
 
 async function GetVideos() {
@@ -13,7 +13,7 @@ async function GetVideos() {
   LoaderAnimation.play();
 
   try {
-    const res = await fetch("https://mytubeserver-production.up.railway.app/api/videos");
+    const res = await fetch("http://127.0.0.1:3000/api/videos");
     const videos = await res.json();
     container.innerHTML = "";
 
@@ -37,7 +37,7 @@ async function GetVideos() {
           mediaElement = new Image();
           mediaElement.onload = resolve;
           mediaElement.onerror = resolve;
-          mediaElement.src = `https://mytubeserver-production.up.railway.app${video.thumbnail}`;
+          mediaElement.src = `http://127.0.0.1:3000${video.thumbnail}`;
           mediaElement.style.display = "block";
         } else {
           mediaElement = document.createElement("video");
@@ -45,7 +45,7 @@ async function GetVideos() {
           mediaElement.style.display = "block";
 
           const source = document.createElement("source");
-          source.src = `https://mytubeserver-production.up.railway.app${video.video_path}`;
+          source.src = `http://127.0.0.1:3000${video.video_path}`;
           source.type = "video/mp4";
           mediaElement.appendChild(source);
 
