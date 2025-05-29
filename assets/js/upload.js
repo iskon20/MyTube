@@ -9,7 +9,7 @@ const loaderAnimation = lottie.loadAnimation({
   renderer: "svg",
   loop: true,
   autoplay: false,
-  path: "../../assets/loader.json",
+  path: "../assets/loader.json",
 });
 
 form.addEventListener("submit", (e) => {
