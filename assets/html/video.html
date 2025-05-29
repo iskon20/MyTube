@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/video.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Просмотр видео</title>
+  </head>
+  <body>
+    <section>
+      <video id="video-player" width="640" controls>
+        <source id="video-source" src="" type="video/mp4" />
+        Ваш браузер не поддерживает видео.
+      </video>
+
+      <div class="titleLikes">
+        <h1 id="video-title"></h1>
+
+        <div id="likesCont" class="likes">
+          <button id="like-button">
+            <img src="../img/icons/like.png" alt="" />
+          </button>
+          <p><span id="likes">0</span></p>
+        </div>
+      </div>
+
+      <div class="desc">
+        <i id="video-description"></i> <br />
+        <a class="back-link" href="../../index.html">← Назад</a>
+      </div>
+    </section>
+
+    <script src="../js/video.js"></script>
+  </body>
+</html>
